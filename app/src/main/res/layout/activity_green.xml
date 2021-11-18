@@ -5,10 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Green" android:background="#145017">
+    tools:context=".Green"
+    android:background="#2ECC71">
 
     <TextView
-        android:text="Simon Says Green"
+        android:text="Simon Dice Verde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,36 +19,34 @@
         android:id="@+id/titleText"
         android:textSize="40sp"
         android:layout_centerHorizontal="true"
-        android:fontFamily="casual"
+
         android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:textColor="#FFFFFF"/>
+
     <TextView
+        android:id="@+id/scoreText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scoreText"
+        android:layout_marginTop="60dp"
         android:text="0"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="textEnd"
-        android:layout_marginEnd="5dp"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/greenBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:textSize="40sp"
         android:layout_below="@id/titleText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="#00FF00"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/yellowBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
@@ -58,7 +57,7 @@
         android:background="#FFFF00"
         android:textColor="#FFFFFF"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/blueBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
@@ -69,28 +68,28 @@
         android:background="#0000FF"
         android:textColor="#FFFFFF"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/redBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:textSize="40sp"
         android:layout_below="@id/blueBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#F44336"
-        android:textColor="#FFFFFF"/>
+        android:background="#922B21"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/restartBtn"
-        android:text="Restart"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:textSize="40sp"
         android:layout_below="@id/yellowBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#6C0A7E"
+        android:background="#0000FF"
+        android:text="Reiniciar"
         android:textColor="#FFFFFF"
-        android:visibility="invisible"/>
+        android:textSize="40sp"
+        android:visibility="invisible" />
 
 </RelativeLayout>

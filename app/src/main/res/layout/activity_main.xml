@@ -12,7 +12,7 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simon Says"
+        android:text="Simon Dice"
         android:textStyle="bold"
         android:textColor="#FDFEFE"
         android:textSize="30dp"

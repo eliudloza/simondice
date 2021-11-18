@@ -36,7 +36,7 @@ class Blue : AppCompatActivity() {
             val temp = "Color: " + (count + 1)
             title.text = temp
         } else {
-            val temp = "Simon says " + colors!![count]
+            val temp = "Simon Dice " + colors!![count]
             title.text = temp
         }
 
@@ -55,7 +55,7 @@ class Blue : AppCompatActivity() {
             if (colors!![count] == answer){
                 val intent = Intent(this@Blue, activitiesArray[classNum])
                 if((count+1) == colors.size){
-                    gameOver("YOU WIN!")
+                    gameOver("¡Ganaste!")
                 } else {
                     if (count == score) {
                         count = -1
@@ -69,7 +69,7 @@ class Blue : AppCompatActivity() {
                 }
             }
             else if(restart.visibility != 0){
-                gameOver("gameOver")
+                gameOver("Perdiste")
             }
         }
 
